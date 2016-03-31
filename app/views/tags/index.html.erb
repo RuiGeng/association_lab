@@ -16,8 +16,8 @@
     <% @tags.each do |tag| %>
       <tr>
         <td><%= tag.name %></td>
-        <td><%= tag.taggable_id %></td>
-        <td><%= tag.taggable_type %></td>
+        <td><%= tag.tagable_id %></td>
+        <td><%= tag.tagable_type %></td>
         <td><%= link_to 'Show', tag %></td>
         <td><%= link_to 'Edit', edit_tag_path(tag) %></td>
         <td><%= link_to 'Destroy', tag, method: :delete, data: { confirm: 'Are you sure?' } %></td>
